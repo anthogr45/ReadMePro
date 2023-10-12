@@ -31,7 +31,7 @@ This Command line application will prompt the user with details required to crea
 
 Home Screen layout is available in the repository path: 
 
-![image info](./assets/images/Screenshot%202023-09-23%20012017.png)
+![image info](./assets/Screenshot%202023-10-12%20125513.png)
 
 ## Credits
 
