@@ -85,22 +85,22 @@ const licenseOpt = [
 
     
 inquirer.prompt(questions).then((answers) => {
-    const generateTableOfContents = (title, description, installation, usage, contribution, test, license, github, email) => {
-        let tableOfContents = [];
-        // tableOfContents += `- [${title}](#${title.toLowerCase().replace(/\s/g,'-')})\n`;
-        tableOfContents += `- [Title](#${title.toLowerCase().replace(/\s/g,'-')})\n`;
-        tableOfContents += `- [Description](#${description.toLowerCase().replace(/\s/g, '-')})\n`;
-        tableOfContents += `- [Installation](#${installation.toLowerCase().replace(/\s/g, '-')})\n`;
-        tableOfContents += `- [Usage](#${usage.toLowerCase().replace(/\s/g, '-')})\n`;
-        tableOfContents += `- [Contribution](#${contribution.toLowerCase().replace(/\s/g, '-')})\n`;
-        tableOfContents += `- [Test](#${test.toLowerCase().replace(/\s/g, '-')})\n`;
-        tableOfContents += `- [License](#${license.toLowerCase().replace(/\s/g, '-')})\n`;
-        tableOfContents += `- [Github](#${github.toLowerCase().replace(/\s/g, '-')})\n`;
-        tableOfContents += `- [Email](#${email.toLowerCase().replace(/\s/g, '-')})\n`;
+    // const generateTableOfContents = (title, description, installation, usage, contribution, test, license, github, email) => {
+    //     let tableOfContents = [];
+    //     // tableOfContents += `- [${title}](#${title.toLowerCase().replace(/\s/g,'-')})\n`;
+    //     tableOfContents += `- [Title](#${title.toLowerCase().replace(/\s/g,'-')})\n`;
+    //     tableOfContents += `- [Description](#${description.toLowerCase().replace(/\s/g, '-')})\n`;
+    //     tableOfContents += `- [Installation](#${installation.toLowerCase().replace(/\s/g, '-')})\n`;
+    //     tableOfContents += `- [Usage](#${usage.toLowerCase().replace(/\s/g, '-')})\n`;
+    //     tableOfContents += `- [Contribution](#${contribution.toLowerCase().replace(/\s/g, '-')})\n`;
+    //     tableOfContents += `- [Test](#${test.toLowerCase().replace(/\s/g, '-')})\n`;
+    //     tableOfContents += `- [License](#${license.toLowerCase().replace(/\s/g, '-')})\n`;
+    //     tableOfContents += `- [Github](#${github.toLowerCase().replace(/\s/g, '-')})\n`;
+    //     tableOfContents += `- [Email](#${email.toLowerCase().replace(/\s/g, '-')})\n`;
 
               
-        return tableOfContents;
-      };
+    //     return tableOfContents;
+    //   };
 
      
       const { title, description, installation, usage, contribution, test, license, github, email} = answers;
@@ -109,8 +109,8 @@ inquirer.prompt(questions).then((answers) => {
       const licenseType = licenseOpt.find((license) => license.name === answers.license)
   
 
-      const tableOfContents = generateTableOfContents(title, description, installation, usage, contribution, test, license, github, email);
-      console.log(tableOfContents);   
+    //   const tableOfContents = generateTableOfContents(title, description, installation, usage, contribution, test, license, github, email);
+    //   console.log(tableOfContents);   
 
       const readmeContent = `${licenseType.badge}
 # Title: ${title}      

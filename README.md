@@ -1,5 +1,5 @@
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-# Title: Antho      
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Title: Anthony tets      
 # Table of content: 
 * [Description](#Description)
 * [Installation](#Installation)
@@ -10,19 +10,19 @@
 * [GitHub](#GitHub)
 * [Email](#Email)
 # Description: 
-testing totot
+ANto Tets
 # Installation:
-test
+tets
 # Usage:
-testing
+test 
 # Contribution: 
-ask g
+Askl G
 # Test:
-ask me
+Askl Class
 # License:
-APACHE
+GPL V3
 # GitHub: 
 https://github.com/anthogr45
 # Email: 
-Please contact me for any further clarifications anthony@gmail.com
+Please contact me for any further clarifications antho.dswg@gmail.com
       
