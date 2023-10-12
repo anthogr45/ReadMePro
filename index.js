@@ -117,7 +117,14 @@ inquirer.prompt(questions).then((answers) => {
 # Table of content: 
 * [Description](#Description)
 * [Installation](#Installation)
-# Description: ${description}
+* [Usage](#Usage)
+* [Contribution](#Contribution)
+* [Test](#Test)
+* [License](#License)
+* [GitHub](#GitHub)
+* [Email](#Email)
+# Description: 
+${description}
 # Installation:
 ${installation}
 # Usage:
