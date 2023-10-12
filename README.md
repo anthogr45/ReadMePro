@@ -12,15 +12,15 @@ This Command line application will prompt the user with details required to crea
 
 ## User Acceptance Criteria
 
-	Command-line application that accepts user input
-	Prompted for information about users application repository
-	A high-quality, professional README.md is generated with the title of the project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-	WHEN the description, installation instructions, usage information, contribution guidelines, and test instructions are inserted, this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-	User can choose a license for my application from a list of options
-	A badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-	User can enter the GitHub username and email. Then this is added to the section of the README entitled Questions, with a link to the GitHub profile and email details
-	WHEN clicked on a city in the search history
-	User can click on the table of content and then taken to the corresponding section of the README
+* Command-line application that accepts user input
+* Prompted for information about users application repository
+* A high-quality, professional README.md is generated with the title of the project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+* WHEN the description, installation instructions, usage information, contribution guidelines, and test instructions are inserted, this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+*	User can choose a license for my application from a list of options
+*	A badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+*	User can enter the GitHub username and email. Then this is added to the section of the README entitled Questions, with a link to the GitHub profile and email details
+*	WHEN clicked on a city in the search history
+*	User can click on the table of content and then taken to the corresponding section of the README
 
 ## Requirements to view the code and the output
 
