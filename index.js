@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 
-const licenseOpt = [
+const licenseOpt = [  // Array contains URLs for the License and for the Badges
     {
         name: 'MIT',
         badge: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
@@ -25,8 +25,7 @@ const licenseOpt = [
     },
 ];
 
-//inquirer.prompt([
-    const questions = [
+const questions = [ //Array for the input questions to generate the Professional Readme
         {
             type: 'input',
             message: 'What is the title of your project?',
@@ -81,40 +80,22 @@ const licenseOpt = [
             message: 'What is your email address?',
             name: 'email',
         },
-    ];
+];
 
     
-inquirer.prompt(questions).then((answers) => {
-    // const generateTableOfContents = (title, description, installation, usage, contribution, test, license, github, email) => {
-    //     let tableOfContents = [];
-    //     // tableOfContents += `- [${title}](#${title.toLowerCase().replace(/\s/g,'-')})\n`;
-    //     tableOfContents += `- [Title](#${title.toLowerCase().replace(/\s/g,'-')})\n`;
-    //     tableOfContents += `- [Description](#${description.toLowerCase().replace(/\s/g, '-')})\n`;
-    //     tableOfContents += `- [Installation](#${installation.toLowerCase().replace(/\s/g, '-')})\n`;
-    //     tableOfContents += `- [Usage](#${usage.toLowerCase().replace(/\s/g, '-')})\n`;
-    //     tableOfContents += `- [Contribution](#${contribution.toLowerCase().replace(/\s/g, '-')})\n`;
-    //     tableOfContents += `- [Test](#${test.toLowerCase().replace(/\s/g, '-')})\n`;
-    //     tableOfContents += `- [License](#${license.toLowerCase().replace(/\s/g, '-')})\n`;
-    //     tableOfContents += `- [Github](#${github.toLowerCase().replace(/\s/g, '-')})\n`;
-    //     tableOfContents += `- [Email](#${email.toLowerCase().replace(/\s/g, '-')})\n`;
-
-              
-    //     return tableOfContents;
-    //   };
-
-     
-      const { title, description, installation, usage, contribution, test, license, github, email} = answers;
+inquirer.prompt(questions).then((answers) => { //This will prompt the questions above and then reurns the answers
+   
+    const { title, description, installation, usage, contribution, test, license, github, email} = answers;   //getting the answers from above
 
 
-      const licenseType = licenseOpt.find((license) => license.name === answers.license)
+    const licenseType = licenseOpt.find((license) => license.name === answers.license) //Getting the selected license name 
   
 
-    //   const tableOfContents = generateTableOfContents(title, description, installation, usage, contribution, test, license, github, email);
-    //   console.log(tableOfContents);   
+//ReadMe Content 
 
-      const readmeContent = `${licenseType.badge}
+    const readmeContent = `${licenseType.badge}
 # Title: ${title}      
-# Table of content: 
+## Table of content: 
 * [Description](#Description)
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -123,36 +104,36 @@ inquirer.prompt(questions).then((answers) => {
 * [License](#License)
 * [GitHub](#GitHub)
 * [Email](#Email)
-# Description: 
+## Description: 
 ${description}
-# Installation:
+## Installation:
 ${installation}
-# Usage:
+## Usage:
 ${usage}
-# Contribution: 
+## Contribution: 
 ${contribution}
-# Test:
+## Test:
 ${test}
-# License:
+## License:
 ${license}
-# GitHub: 
+## GitHub: 
 https://github.com/${github}
-# Email: 
+## Email: 
 Please contact me for any further clarifications ${email}
-      `;
-
+        `;
+    
 
       //Write the content to the README.md 
-      fs.writeFile('README.md', readmeContent, (err) => {
+    fs.writeFile('README.md', readmeContent, (err) => {
     
         if (err) {
             console.log(err);
         } else {
             console.log('README.md successfully created!');
         }
-      });
-
     });
+
+});
 
 
    
