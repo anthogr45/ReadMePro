@@ -36,7 +36,7 @@ Home Screen layout is available in the repository path:
 ## Credits
 
 - Lecturer Gurneesh Singh for teaching us the module.
-- Tutor Dru Sanchez for guiding me on API matters.
+- Tutor Dru Sanchez for guiding me on the subject matters.
 - Ask BCS collegues - Shane and Andreas for their support
   
 ## Features Links
