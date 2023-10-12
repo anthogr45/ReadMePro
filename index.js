@@ -113,24 +113,24 @@ inquirer.prompt(questions).then((answers) => {
       console.log(tableOfContents);   
 
       const readmeContent = `${licenseType.badge}
-      # Title: ${title}      
-      # Table of content: 
-      ${tableOfContents}
-      # Description: ${description}
-      # Installation:
-      ${installation}
-      # Usage:
-      ${usage}
-      # Contribution: 
-      ${contribution}
-      # Test:
-      ${test}
-      # License:
-      ${license}
-      # GitHub: 
-      https://github.com/${github}
-      # Email: 
-      Please contact me for any further clarifications ${email}
+# Title: ${title}      
+# Table of content: 
+${tableOfContents}
+# Description: ${description}
+# Installation:
+${installation}
+# Usage:
+${usage}
+# Contribution: 
+${contribution}
+# Test:
+${test}
+# License:
+${license}
+# GitHub: 
+https://github.com/${github}
+# Email: 
+Please contact me for any further clarifications ${email}
       `;
 
 
