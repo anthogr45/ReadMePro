@@ -115,7 +115,8 @@ inquirer.prompt(questions).then((answers) => {
       const readmeContent = `${licenseType.badge}
 # Title: ${title}      
 # Table of content: 
-${tableOfContents}
+* [Description](#Description)
+* [Installation](#Installation)
 # Description: ${description}
 # Installation:
 ${installation}
